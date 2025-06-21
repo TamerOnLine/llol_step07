@@ -8,18 +8,13 @@
 ## 📦 Clone & Setup
 
 ```bash
-# Clone the project repository from GitHub
-git clone https://github.com/TamerOnLine/llol_step07.git
-# Navigate into the project directory  
-cd llol_step07
-# Create a virtual environment named 'venv'                                        
-python -m venv venv
- # Activate the virtual environment (Windows CMD)                                 
-.\venv\Scripts\Activate
-# Upgrade pip to the latest version
-python -m pip install --upgrade pip
-# Install required packages listed in requirements.txt
-pip install -r requirements.txt                           
+git clone https://github.com/TamerOnLine/llol_step07.git  # Clone the project repository from GitHub
+cd llol_step07                                            # Navigate into the project directory
+python -m venv venv                                       # Create a virtual environment named 'venv'
+.\venv\Scripts\Activate                                   # Activate the virtual environment (Windows CMD)
+python -m pip install --upgrade pip                       # Upgrade pip to the latest version
+pip install -r requirements.txt                           # Install required packages listed in requirements.txt
+               
 ```
 
 ---
