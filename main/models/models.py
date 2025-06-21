@@ -1,3 +1,4 @@
+
 from ..extensions import db
 from sqlalchemy.dialects.postgresql import JSON
 
@@ -18,7 +19,6 @@ class Setting(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     key = db.Column(db.String(100), unique=True, nullable=False)
     value = db.Column(db.Text, nullable=False)
-
 
 
 class ResumeSection(db.Model):
@@ -53,7 +53,8 @@ class ResumeParagraph(db.Model):
         "ResumeField",
         backref="resume_paragraph",
         cascade="all, delete-orphan",
-        lazy=True
+        lazy=True,
+        overlaps="paragraph,resume_fields"
     )
 
 
@@ -70,10 +71,11 @@ class ResumeField(db.Model):
     order = db.Column(db.Integer, default=0)
     is_visible = db.Column(db.Boolean, default=True)
 
-    paragraph = db.relationship("ResumeParagraph", backref="resume_fields")
-
-
-
+    paragraph = db.relationship(
+        "ResumeParagraph",
+        backref="resume_fields",
+        overlaps="fields,resume_paragraph"
+    )
 
 
 class NavigationLink(db.Model):

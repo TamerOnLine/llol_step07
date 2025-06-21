@@ -1,10 +1,9 @@
-# llol_step07
 
+# llol_step07
 
 [![Build Status](...)](link) [![License](...)](link)
 
 ---
-
 
 ### 📦 Clone & Setup
 
@@ -35,7 +34,6 @@ pip install -r requirements.txt                           # Install all required
 
 > 📽️ The video above shows the complete setup process for the `llol_step07` repository, from cloning to installing dependencies.
 
-
 ---
 
 ### 🌐 Internationalization: Running the `i18n_translate` Module
@@ -61,13 +59,35 @@ This module extracts translatable strings, creates `.po` files for each supporte
   </a>
 </p>
 
-> This tool streamlines the i18n workflow by integrating extraction, translation, and file generation in a single command.
+>📽️ This tool streamlines the i18n workflow by integrating extraction, translation, and file generation in a single command.
+
 ---
 
+### 🚀 Running the Flask App
 
+To start the development server, run the following command:
 
+```bash
+py -m run
+```
 
+This will:
+- Connect to the PostgreSQL admin database.
+- Create the working database `postgreslebenslauf` (if not already existing).
+- Create required tables.
+- Launch the Flask app in development mode with debugging enabled.
 
+#### 🎬 Demo
+
+<p align="center">
+  <a href="screenshots/run.gif">
+    <img src="screenshots/run.gif" alt="Flask app running with py -m run" width="600"/>
+  </a>
+</p>
+
+> 📽️ The animation above shows how the application is launched and confirms successful connection to the database.
+
+---
 
 ## 🛠️ Next Step
 
