@@ -4,7 +4,7 @@
 [![Build Status](...)](link) [![License](...)](link)
 
 
-## Clone & Setup
+## 📦 Clone & Setup
 
 ```bash
 git clone https://github.com/TamerOnLine/llol_step07.git
