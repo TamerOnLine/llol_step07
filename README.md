@@ -1,9 +1,10 @@
 # llol_step07
+[install](#Clone_&_Setup)
 
 [![Build Status](...)](link) [![License](...)](link)
 
 
-## 🔧 Clone & Setup
+## Clone & Setup
 
 ```bash
 git clone https://github.com/TamerOnLine/llol_step07.git
