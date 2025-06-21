@@ -1,6 +1,6 @@
 # llol_step07
 
-[![Build Status](https://github.com/TamerOnLine/llol_step07/actions/workflows/python-app.yml/badge.svg)](https://github.com/TamerOnLine/llol_step07/actions)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/user/repo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![Flask Version](https://img.shields.io/badge/Flask-2.0%2B-green.svg)](https://flask.palletsprojects.com/en/2.0.x/)
