@@ -5,37 +5,63 @@
 
 ---
 
-## 📦 Clone & Setup
+
+### 📦 Clone & Setup
+
+Follow these steps to clone the repository and set up your development environment:
 
 ```bash
 git clone https://github.com/TamerOnLine/llol_step07.git  # Clone the project repository from GitHub
 cd llol_step07                                            # Navigate into the project directory
 python -m venv venv                                       # Create a virtual environment named 'venv'
-.\venv\Scripts\Activate                                   # Activate the virtual environment (Windows CMD)
+.\venv\Scripts\Activate                                # Activate the virtual environment (Windows CMD)
 python -m pip install --upgrade pip                       # Upgrade pip to the latest version
-pip install -r requirements.txt                           # Install required packages listed in requirements.txt
-               
+pip install -r requirements.txt                           # Install all required dependencies
 ```
+
+#### 💡 Tip
+> If you're using PowerShell, replace the activation command with:
+> ```powershell
+> .\venv\Scripts\Activate.ps1
+> ```
+
+#### 🎬 Demo
 
 <p align="center">
   <a href="screenshots/install.gif">
-    <img src="screenshots/install.gif" alt="Quick install" width="600"/>
+    <img src="screenshots/install.gif" alt="Quick install demo" width="600"/>
   </a>
 </p>
 
-📽️ Quick Install of the llol_step07 repository in action
+> 📽️ The video above shows the complete setup process for the `llol_step07` repository, from cloning to installing dependencies.
+
 
 ---
 
+### 🌐 Internationalization: Running the `i18n_translate` Module
+
+To automatically generate or update translation files for your project, run the following command:
+
 ```bash
-py -m main.i18n_translate  # Run the i18n_translate module to generate translation files
+py -m main.i18n_translate
 ```
+
+This module extracts translatable strings, creates `.po` files for each supported language (if they don't exist), and optionally translates them using automated tools such as `deep-translator`.
+
+#### 📁 Output
+
+- `translations/` folder with updated `.po` files per language.
+- Automatic generation of `.pot` template file based on source code and templates.
+
+#### 🎬 Demo
+
 <p align="center">
   <a href="screenshots/i18n_translate.gif">
     <img src="screenshots/i18n_translate.gif" alt="i18n_translate in action" width="600"/>
   </a>
 </p>
-📽️ Running the i18n_translate module to generate translation files
+
+> This tool streamlines the i18n workflow by integrating extraction, translation, and file generation in a single command.
 ---
 
 
