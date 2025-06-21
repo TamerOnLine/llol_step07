@@ -152,7 +152,7 @@ pytest
 
 - [Flask](https://flask.palletsprojects.com/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
-- [Flask-Babel](https://pythonhosted.org/Flask-Babel/)
+- [Flask-Babel](https://python-babel.github.io/flask-babel/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [deep-translator](https://pypi.org/project/deep-translator/)
 
