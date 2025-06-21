@@ -1,7 +1,20 @@
-
 # llol_step07
 
-[![Build Status](...)](link) [![License](...)](link)
+[![Build Status](https://github.com/TamerOnLine/llol_step07/actions/workflows/python-app.yml/badge.svg)](https://github.com/TamerOnLine/llol_step07/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Flask Version](https://img.shields.io/badge/Flask-2.0%2B-green.svg)](https://flask.palletsprojects.com/en/2.0.x/)
+![i18n Supported](https://img.shields.io/badge/i18n-Multilingual-informational.svg)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Active-blue.svg)
+![Step 07](https://img.shields.io/badge/Progress-Step_07-blueviolet.svg)
+
+---
+
+## 📖 Overview
+
+**llol_step07** is the seventh milestone of an open-source dynamic resume builder aimed at empowering multilingual content creation, real-time editing, and customization. It's built for developers who need structured, localized, and exportable resume content managed through a Flask-based admin interface.
+
+
 
 ---
 
@@ -63,6 +76,17 @@ This module extracts translatable strings, creates `.po` files for each supporte
 
 ---
 
+## 🌍 Features
+
+- 🌐 Multi-language support using `Flask-Babel`
+- 🔄 Automatic translation using `deep-translator`
+- 🧾 Live editing of sections, paragraphs, and fields
+- 🎛️ Admin dashboard for dynamic content management
+- 🐘 PostgreSQL as the primary database
+- 🎨 Ready for resume theming and customization
+
+---
+
 ### 🚀 Running the Flask App
 
 To start the development server, run the following command:
@@ -89,13 +113,48 @@ This will:
 
 ---
 
-## 🛠️ Next Step
+## 📂 Project Structure
 
-> 👉 [Go to llol_step07 →](https://github.com/TamerOnLine/llol_step07)
+```bash
+main/
+├── models.py
+├── routes.py
+├── templates/
+│   └── base.html.j2
+├── static/
+│   └── css/resume.css
+├── translations/
+└── ...
+```
 
-- Language-aware admin forms
-- Live editing in multiple languages
-- Auto-translation features
+---
+
+## 🧪 Running Tests
+
+```bash
+pytest
+```
+
+> Coming soon: Unit tests for translation, section logic, and UI views.
+
+---
+
+## 🗺️ Roadmap
+
+- ✅ Step 07: Translation engine + dynamic sections
+- ⏭️ Step 08: Admin interface for language settings
+- 🔒 Step 09: Add authentication for admin users
+- 📄 Step 10: Export resume to PDF
+
+---
+
+## 🧰 Built With
+
+- [Flask](https://flask.palletsprojects.com/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+- [Flask-Babel](https://pythonhosted.org/Flask-Babel/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [deep-translator](https://pypi.org/project/deep-translator/)
 
 ---
 
