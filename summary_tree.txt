@@ -1,6 +1,4 @@
-📁 llol_step06/
-├── 📁 instance/
-│   └── lebenslauf.db
+📁 llol_step07/
 ├── 📁 main/
 │   ├── 📁 config/
 │   │   ├── __init__.py
@@ -45,13 +43,10 @@
 │   ├── 📁 translations/
 │   │   ├── 📁 ar/
 │   │   │   └── 📁 LC_MESSAGES/
-│   │   │       ├── messages.mo
 │   │   │       └── messages.po
 │   │   └── 📁 de/
 │   │       └── 📁 LC_MESSAGES/
-│   │           ├── messages.mo
 │   │           └── messages.po
-│   ├── .env
 │   ├── __init__.py
 │   ├── babel.cfg
 │   ├── config.py
@@ -59,10 +54,10 @@
 │   ├── i18n.py
 │   ├── i18n_runtime.py
 │   ├── i18n_translate.py
-│   ├── main.txt
-│   └── run.py
+│   └── main.txt
 ├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
+├── run.py
 └── wsgi.py

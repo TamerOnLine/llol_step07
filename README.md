@@ -17,7 +17,27 @@ pip install -r requirements.txt                           # Install required pac
                
 ```
 
+<p align="center">
+  <a href="screenshots/install.gif">
+    <img src="screenshots/install.gif" alt="Quick install" width="600"/>
+  </a>
+</p>
+
+📽️ Quick Install of the llol_step07 repository in action
+
 ---
+
+```bash
+py -m main.i18n_translate  # Run the i18n_translate module to generate translation files
+```
+<p align="center">
+  <a href="screenshots/i18n_translate.gif">
+    <img src="screenshots/i18n_translate.gif" alt="i18n_translate in action" width="600"/>
+  </a>
+</p>
+📽️ Running the i18n_translate module to generate translation files
+---
+
 
 
 
