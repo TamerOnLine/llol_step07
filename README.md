@@ -87,6 +87,46 @@ This module extracts translatable strings, creates `.po` files for each supporte
 
 ---
 
+## 🧩 Database Schema
+
+The resume structure is built dynamically using the following tables:
+
+- `ResumeSection`: Top-level sections (e.g., Education, Work Experience)
+- `ResumeParagraph`: Paragraphs under each section with `field_type`
+- `ResumeField`: Key-value pairs inside each paragraph; supports multilingual content
+- `Setting`: Stores design and display options as JSON
+- `LanguageOption`: Manages supported languages
+- `NavigationLink`: Handles sidebar/menu navigation
+
+A ResumeSection contains multiple ResumeParagraphs, and each ResumeParagraph includes multiple ResumeFields.
+
+---
+
+### 🎨 Custom Styling via Settings
+
+You can control the appearance of your resume using the admin panel:
+
+- **Section Title Styling**: font-size, color, weight
+- **Paragraph Styling**: font-size, color
+- **Body Font**: custom font stack
+
+These are stored as JSON in the `Setting` table and dynamically applied to your resume.
+
+---
+
+### 🗂️ Key Files
+
+| File | Purpose |
+|------|---------|
+| `main_routes.py` | Public routes (home, index, language selector) |
+| `admin_builder_routes.py` | Admin: section CRUD |
+| `admin_paragraph.py` | Admin: paragraph CRUD |
+| `admin_field.py` | Admin: field CRUD and reordering |
+| `i18n_translate.py` | Auto translation and `.po` file generation |
+| `run.py` | App bootstrap with DB creation |
+
+
+
 ### 🚀 Running the Flask App
 
 To start the development server, run the following command:

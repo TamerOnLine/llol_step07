@@ -1,4 +1,3 @@
-
 from ..extensions import db
 from sqlalchemy.dialects.postgresql import JSON
 
@@ -51,20 +50,22 @@ class ResumeParagraph(db.Model):
 
     fields = db.relationship(
         "ResumeField",
-        backref="resume_paragraph",
+        back_populates="paragraph",  # ✅ العلاقة الثنائية الصريحة
         cascade="all, delete-orphan",
-        lazy=True,
-        overlaps="paragraph,resume_fields"
+        lazy=True
     )
 
 
 class ResumeField(db.Model):
+    """
+    Field unit inside a paragraph.
+    """
     id = db.Column(db.Integer, primary_key=True)
     resume_paragraph_id = db.Column(db.Integer, db.ForeignKey('resume_paragraph.id'), nullable=False)
     key = db.Column(db.String(50), nullable=False)
     value = db.Column(db.Text, nullable=True)
 
-    # ✅ الحقل الجديد لدعم الترجمة المتعددة
+    # ✅ دعم الترجمة المتعددة
     value_translations = db.Column(JSON, nullable=True)
 
     field_type = db.Column("type", db.String(50), nullable=False, default='text')
@@ -73,8 +74,7 @@ class ResumeField(db.Model):
 
     paragraph = db.relationship(
         "ResumeParagraph",
-        backref="resume_fields",
-        overlaps="fields,resume_paragraph"
+        back_populates="fields"  # ✅ العلاقة الثنائية الصريحة
     )
 
 

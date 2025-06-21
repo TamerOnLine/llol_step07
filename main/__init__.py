@@ -9,6 +9,8 @@ from .routes.main_routes import main_bp
 from .extensions import babel
 from .i18n_runtime import init_i18n, get_locale
 import os
+
+
 import logging
 
 def create_app():
