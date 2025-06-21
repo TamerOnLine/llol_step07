@@ -3,6 +3,7 @@
 
 [![Build Status](...)](link) [![License](...)](link)
 
+---
 
 ## 📦 Clone & Setup
 
@@ -14,6 +15,8 @@ python -m venv venv                                       # Create a virtual env
 python -m pip install --upgrade pip                       # Upgrade pip to the latest version
 pip install -r requirements.txt                           # Install required packages listed in requirements.txt
 ```
+
+---
 
 
 
